@@ -6,25 +6,18 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		EEB362C32C9F1A833021260CE4A7456D /* OCBanoryPod */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 87993D61042B827168C502557744C09A /* Build configuration list for PBXAggregateTarget "OCBanoryPod" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = OCBanoryPod;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		4AB9A4BD466B17F9E4AC14AE470B43AE /* Pods-OCBanoryPod_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0850F210136127F3FA47CFBE58A79E /* Pods-OCBanoryPod_Example-dummy.m */; };
-		62CB3846BFF8AD42F293F3186A603624 /* Pods-OCBanoryPod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C513E211BF1E3CF3E4E2956E7CA821 /* Pods-OCBanoryPod_Tests-dummy.m */; };
-		9830517B4561446A75DB710FE1870C08 /* Pods-OCBanoryPod_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC5501ED1FFDBFA72674EE7C13C77DC /* Pods-OCBanoryPod_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F902A5227502E9627FABC71D00AA125 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4AB9A4BD466B17F9E4AC14AE470B43AE /* Pods-OCBanoryPod_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F87F2CD4C51E8EC57AC1D1368A75DDB /* Pods-OCBanoryPod_Example-dummy.m */; };
+		62CB3846BFF8AD42F293F3186A603624 /* Pods-OCBanoryPod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECED3003FC6FA2B972488F98FCD3707 /* Pods-OCBanoryPod_Tests-dummy.m */; };
+		9830517B4561446A75DB710FE1870C08 /* Pods-OCBanoryPod_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF6401FA223BF90DBD70A2287845702 /* Pods-OCBanoryPod_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACC1D8DC81694AAF03DF060E7D850A90 /* JJTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5061E5877E86B254677992A8EC6FB10E /* JJTool.m */; };
+		B825810A8F2B46339D7778E6CB277F04 /* JJTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 74C61859C03D9A07ADF4C52DF70125EF /* JJTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EF98963FDA7013E5530DD9182C90F /* OCBanoryPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8F1D7F66F1C608B755AD82A810F6FC /* OCBanoryPod-dummy.m */; };
 		DA1AAF8FAFCCC601DF5E9B3F8DAF47E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		E477787D23F2982308E67039D91A0673 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FA21E134BA3139E7BB81D19A0A998218 /* Pods-OCBanoryPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67D10F3CFFE1F21E6CAE66260F68D9B0 /* Pods-OCBanoryPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA2B253CAEDB8BD56D6F065AAA21A557 /* OCBanoryPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 692723B025390C9E116C08809ACCFE9A /* OCBanoryPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA21E134BA3139E7BB81D19A0A998218 /* Pods-OCBanoryPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD95108AEBA7D8F595EB637E30D12018 /* Pods-OCBanoryPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,33 +38,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04063E5F2E112C5C24961EE23ADC895B /* Pods-OCBanoryPod_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCBanoryPod_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		05B8ADD6C3D45C73F20BFA8DD3F094DF /* Pods-OCBanoryPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCBanoryPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		00086D02D4736F825E9DF294ACE43898 /* Pods-OCBanoryPod_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCBanoryPod_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0B40CDD3261F85A3BCF06A60320C5857 /* Pods-OCBanoryPod_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCBanoryPod_Tests.modulemap"; sourceTree = "<group>"; };
+		0C90921A828EAD6FFCF23F4EF31CF776 /* Pods-OCBanoryPod_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCBanoryPod_Example.modulemap"; sourceTree = "<group>"; };
+		108E36BFCA11E7DAEB0B579C09920F31 /* OCBanoryPod.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = OCBanoryPod.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1ECED3003FC6FA2B972488F98FCD3707 /* Pods-OCBanoryPod_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCBanoryPod_Tests-dummy.m"; sourceTree = "<group>"; };
 		299F847F94673D2586A21BE2380C51F7 /* Pods_OCBanoryPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OCBanoryPod_Example.framework; path = "Pods-OCBanoryPod_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		306D5068F87C0D57689FA5F68ACF869B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3698DA165F8AA6FA4986D763E6A1E6EE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		4FBC775DE00D68204AA31A85437857D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5061E5877E86B254677992A8EC6FB10E /* JJTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JJTool.m; path = OCBanoryPod/Classes/JJTool.m; sourceTree = "<group>"; };
 		52BCB23ABC951571B7945A74ED75D512 /* Pods_OCBanoryPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OCBanoryPod_Tests.framework; path = "Pods-OCBanoryPod_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6220A7C8978FC03862FEC4BD91E0E249 /* Pods-OCBanoryPod_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCBanoryPod_Tests.modulemap"; sourceTree = "<group>"; };
-		67D10F3CFFE1F21E6CAE66260F68D9B0 /* Pods-OCBanoryPod_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCBanoryPod_Tests-umbrella.h"; sourceTree = "<group>"; };
-		68BB0343A251E1B3F1838391B789F995 /* Pods-OCBanoryPod_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCBanoryPod_Example.modulemap"; sourceTree = "<group>"; };
-		76E652EED44BE57BE1DA87DBD3392205 /* Pods-OCBanoryPod_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCBanoryPod_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7E0850F210136127F3FA47CFBE58A79E /* Pods-OCBanoryPod_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCBanoryPod_Example-dummy.m"; sourceTree = "<group>"; };
-		8064FBB317C62E7BC8273171C97026FE /* Pods-OCBanoryPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCBanoryPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		84B73620AE54CBB0178B180F5B4CB29F /* Pods-OCBanoryPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCBanoryPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		867B6E8E305FF332CC75E53F1829F28C /* Pods-OCBanoryPod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCBanoryPod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		88607CA825532AEF308B8773957739F0 /* OCBanoryPod.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = OCBanoryPod.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6120C2493FF51A91CDEEDD427A89CF90 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		692723B025390C9E116C08809ACCFE9A /* OCBanoryPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCBanoryPod-umbrella.h"; sourceTree = "<group>"; };
+		6A1CD8C02FC40314CD97EF16E8D43C85 /* Pods-OCBanoryPod_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCBanoryPod_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6AC346B410C92D59C062BC5233E1DD96 /* Pods-OCBanoryPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCBanoryPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F87F2CD4C51E8EC57AC1D1368A75DDB /* Pods-OCBanoryPod_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCBanoryPod_Example-dummy.m"; sourceTree = "<group>"; };
+		74C61859C03D9A07ADF4C52DF70125EF /* JJTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JJTool.h; path = OCBanoryPod/Classes/JJTool.h; sourceTree = "<group>"; };
+		7BDB50E1D4F108889596639564799664 /* Pods-OCBanoryPod_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCBanoryPod_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		85E88EECA79E40B3CB90B1C8CACACD39 /* Pods-OCBanoryPod_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCBanoryPod_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9627DBAAAAB71CAEDF9094079F4B2AA4 /* OCBanoryPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OCBanoryPod.framework; path = OCBanoryPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A735EAA1FFD38F15C0CA31EA17E5852 /* OCBanoryPod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCBanoryPod-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E14B5A1E0095F72D2CD44F8855B81A7 /* Pods-OCBanoryPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCBanoryPod_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A7C513E211BF1E3CF3E4E2956E7CA821 /* Pods-OCBanoryPod_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCBanoryPod_Tests-dummy.m"; sourceTree = "<group>"; };
-		A860C2A190B5EC628076EC6993A7801B /* OCBanoryPod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OCBanoryPod.xcconfig; sourceTree = "<group>"; };
-		B2307D13C1A07280EF8A32725BECE70C /* Pods-OCBanoryPod_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCBanoryPod_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C1932D62230E979F228D15C378A63B4F /* Pods-OCBanoryPod_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCBanoryPod_Example-Info.plist"; sourceTree = "<group>"; };
-		C268FC5B7E2BBA87213FADF97EC070EA /* Pods-OCBanoryPod_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCBanoryPod_Tests-Info.plist"; sourceTree = "<group>"; };
-		CEC5501ED1FFDBFA72674EE7C13C77DC /* Pods-OCBanoryPod_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCBanoryPod_Example-umbrella.h"; sourceTree = "<group>"; };
+		A8A9F7AC9350CD76CAF318301F2903D7 /* OCBanoryPod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OCBanoryPod-Info.plist"; sourceTree = "<group>"; };
+		AB6D8456A33C4F89E1257E8A02CF41D5 /* Pods-OCBanoryPod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCBanoryPod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AD95108AEBA7D8F595EB637E30D12018 /* Pods-OCBanoryPod_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCBanoryPod_Tests-umbrella.h"; sourceTree = "<group>"; };
+		AE8F1D7F66F1C608B755AD82A810F6FC /* OCBanoryPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCBanoryPod-dummy.m"; sourceTree = "<group>"; };
+		C109CF720B2DA8E0371BDD416246D9A5 /* OCBanoryPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OCBanoryPod.modulemap; sourceTree = "<group>"; };
+		C3A43C5EEB0CE73CBBE39C868C8B7A46 /* Pods-OCBanoryPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCBanoryPod_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C4D295BD3B395C450B05E8EC0A422972 /* Pods-OCBanoryPod_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCBanoryPod_Example-Info.plist"; sourceTree = "<group>"; };
+		D279176A12C336B648EF222E2350BD82 /* Pods-OCBanoryPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCBanoryPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E0FF2C6EE6198001822A0785FE9F387D /* Pods-OCBanoryPod_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCBanoryPod_Tests-Info.plist"; sourceTree = "<group>"; };
+		E9CAF4D595A1F9D8A3FBEAE362241D10 /* Pods-OCBanoryPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCBanoryPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EAF1C75D2B3B3EED07B3B1DA38DFD0A6 /* OCBanoryPod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OCBanoryPod.xcconfig; sourceTree = "<group>"; };
+		EEF6401FA223BF90DBD70A2287845702 /* Pods-OCBanoryPod_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCBanoryPod_Example-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		70A3CE9D46F5230837F69BA08F03EA36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F902A5227502E9627FABC71D00AA125 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E2C7311EC435758E5520FB1EC08B331 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,82 +101,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		081A564EFE5F4D8796C08AD8633C4066 /* Support Files */ = {
+		18A0467CF82D7FCF20F2678345C6565E /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A860C2A190B5EC628076EC6993A7801B /* OCBanoryPod.xcconfig */,
+				53F254E287DFEF6692D94A2535003F69 /* OCBanoryPod */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/OCBanoryPod";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		264A349E38B97168B2394B85D0520A41 /* Pods-OCBanoryPod_Tests */ = {
+		2429D2D149D5BC36E40C0404840D9F22 /* Pods-OCBanoryPod_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6220A7C8978FC03862FEC4BD91E0E249 /* Pods-OCBanoryPod_Tests.modulemap */,
-				B2307D13C1A07280EF8A32725BECE70C /* Pods-OCBanoryPod_Tests-acknowledgements.markdown */,
-				867B6E8E305FF332CC75E53F1829F28C /* Pods-OCBanoryPod_Tests-acknowledgements.plist */,
-				A7C513E211BF1E3CF3E4E2956E7CA821 /* Pods-OCBanoryPod_Tests-dummy.m */,
-				C268FC5B7E2BBA87213FADF97EC070EA /* Pods-OCBanoryPod_Tests-Info.plist */,
-				67D10F3CFFE1F21E6CAE66260F68D9B0 /* Pods-OCBanoryPod_Tests-umbrella.h */,
-				84B73620AE54CBB0178B180F5B4CB29F /* Pods-OCBanoryPod_Tests.debug.xcconfig */,
-				05B8ADD6C3D45C73F20BFA8DD3F094DF /* Pods-OCBanoryPod_Tests.release.xcconfig */,
+				0B40CDD3261F85A3BCF06A60320C5857 /* Pods-OCBanoryPod_Tests.modulemap */,
+				00086D02D4736F825E9DF294ACE43898 /* Pods-OCBanoryPod_Tests-acknowledgements.markdown */,
+				AB6D8456A33C4F89E1257E8A02CF41D5 /* Pods-OCBanoryPod_Tests-acknowledgements.plist */,
+				1ECED3003FC6FA2B972488F98FCD3707 /* Pods-OCBanoryPod_Tests-dummy.m */,
+				E0FF2C6EE6198001822A0785FE9F387D /* Pods-OCBanoryPod_Tests-Info.plist */,
+				AD95108AEBA7D8F595EB637E30D12018 /* Pods-OCBanoryPod_Tests-umbrella.h */,
+				6AC346B410C92D59C062BC5233E1DD96 /* Pods-OCBanoryPod_Tests.debug.xcconfig */,
+				E9CAF4D595A1F9D8A3FBEAE362241D10 /* Pods-OCBanoryPod_Tests.release.xcconfig */,
 			);
 			name = "Pods-OCBanoryPod_Tests";
 			path = "Target Support Files/Pods-OCBanoryPod_Tests";
 			sourceTree = "<group>";
 		};
-		46769123F991DE829DB181F36F777619 /* Development Pods */ = {
+		3D5CC113E9BC991CAF7E21F7679981C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F78F92EFA0AD99A8AFE6ECB66E263FA /* OCBanoryPod */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		47A921E957FCA3B92A3CEE6EE18E5451 /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				9627DBAAAAB71CAEDF9094079F4B2AA4 /* OCBanoryPod.framework */,
 				299F847F94673D2586A21BE2380C51F7 /* Pods_OCBanoryPod_Example.framework */,
 				52BCB23ABC951571B7945A74ED75D512 /* Pods_OCBanoryPod_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6653A2E4F66575D4B4231D217EC85425 /* Pod */ = {
+		53F254E287DFEF6692D94A2535003F69 /* OCBanoryPod */ = {
 			isa = PBXGroup;
 			children = (
-				4FBC775DE00D68204AA31A85437857D6 /* LICENSE */,
-				88607CA825532AEF308B8773957739F0 /* OCBanoryPod.podspec */,
-				3698DA165F8AA6FA4986D763E6A1E6EE /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		9F78F92EFA0AD99A8AFE6ECB66E263FA /* OCBanoryPod */ = {
-			isa = PBXGroup;
-			children = (
-				6653A2E4F66575D4B4231D217EC85425 /* Pod */,
-				081A564EFE5F4D8796C08AD8633C4066 /* Support Files */,
+				74C61859C03D9A07ADF4C52DF70125EF /* JJTool.h */,
+				5061E5877E86B254677992A8EC6FB10E /* JJTool.m */,
+				B6A39BDD54C5377FC0C5BDCD3279BD88 /* Pod */,
+				D452214C70D5B0B13D2B3670792785C9 /* Support Files */,
 			);
 			name = OCBanoryPod;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		AD4B021F3AB5B81075DDA88131B16811 /* Pods-OCBanoryPod_Example */ = {
+		55FAA1D0C6B68E79ABE68EE3939E95CB /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				68BB0343A251E1B3F1838391B789F995 /* Pods-OCBanoryPod_Example.modulemap */,
-				76E652EED44BE57BE1DA87DBD3392205 /* Pods-OCBanoryPod_Example-acknowledgements.markdown */,
-				04063E5F2E112C5C24961EE23ADC895B /* Pods-OCBanoryPod_Example-acknowledgements.plist */,
-				7E0850F210136127F3FA47CFBE58A79E /* Pods-OCBanoryPod_Example-dummy.m */,
-				C1932D62230E979F228D15C378A63B4F /* Pods-OCBanoryPod_Example-Info.plist */,
-				CEC5501ED1FFDBFA72674EE7C13C77DC /* Pods-OCBanoryPod_Example-umbrella.h */,
-				8064FBB317C62E7BC8273171C97026FE /* Pods-OCBanoryPod_Example.debug.xcconfig */,
-				9E14B5A1E0095F72D2CD44F8855B81A7 /* Pods-OCBanoryPod_Example.release.xcconfig */,
+				9B1690A2B1E14414237E87BE99AE546C /* Pods-OCBanoryPod_Example */,
+				2429D2D149D5BC36E40C0404840D9F22 /* Pods-OCBanoryPod_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9B1690A2B1E14414237E87BE99AE546C /* Pods-OCBanoryPod_Example */ = {
+			isa = PBXGroup;
+			children = (
+				0C90921A828EAD6FFCF23F4EF31CF776 /* Pods-OCBanoryPod_Example.modulemap */,
+				85E88EECA79E40B3CB90B1C8CACACD39 /* Pods-OCBanoryPod_Example-acknowledgements.markdown */,
+				7BDB50E1D4F108889596639564799664 /* Pods-OCBanoryPod_Example-acknowledgements.plist */,
+				6F87F2CD4C51E8EC57AC1D1368A75DDB /* Pods-OCBanoryPod_Example-dummy.m */,
+				6A1CD8C02FC40314CD97EF16E8D43C85 /* Pods-OCBanoryPod_Example-frameworks.sh */,
+				C4D295BD3B395C450B05E8EC0A422972 /* Pods-OCBanoryPod_Example-Info.plist */,
+				EEF6401FA223BF90DBD70A2287845702 /* Pods-OCBanoryPod_Example-umbrella.h */,
+				D279176A12C336B648EF222E2350BD82 /* Pods-OCBanoryPod_Example.debug.xcconfig */,
+				C3A43C5EEB0CE73CBBE39C868C8B7A46 /* Pods-OCBanoryPod_Example.release.xcconfig */,
 			);
 			name = "Pods-OCBanoryPod_Example";
 			path = "Target Support Files/Pods-OCBanoryPod_Example";
+			sourceTree = "<group>";
+		};
+		B6A39BDD54C5377FC0C5BDCD3279BD88 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6120C2493FF51A91CDEEDD427A89CF90 /* LICENSE */,
+				108E36BFCA11E7DAEB0B579C09920F31 /* OCBanoryPod.podspec */,
+				306D5068F87C0D57689FA5F68ACF869B /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -181,20 +195,11 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				46769123F991DE829DB181F36F777619 /* Development Pods */,
+				18A0467CF82D7FCF20F2678345C6565E /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				47A921E957FCA3B92A3CEE6EE18E5451 /* Products */,
-				D0A967260CFDC5F36CEF1F077ED8DF37 /* Targets Support Files */,
+				3D5CC113E9BC991CAF7E21F7679981C1 /* Products */,
+				55FAA1D0C6B68E79ABE68EE3939E95CB /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D0A967260CFDC5F36CEF1F077ED8DF37 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD4B021F3AB5B81075DDA88131B16811 /* Pods-OCBanoryPod_Example */,
-				264A349E38B97168B2394B85D0520A41 /* Pods-OCBanoryPod_Tests */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -205,6 +210,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D452214C70D5B0B13D2B3670792785C9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C109CF720B2DA8E0371BDD416246D9A5 /* OCBanoryPod.modulemap */,
+				EAF1C75D2B3B3EED07B3B1DA38DFD0A6 /* OCBanoryPod.xcconfig */,
+				AE8F1D7F66F1C608B755AD82A810F6FC /* OCBanoryPod-dummy.m */,
+				A8A9F7AC9350CD76CAF318301F2903D7 /* OCBanoryPod-Info.plist */,
+				9A735EAA1FFD38F15C0CA31EA17E5852 /* OCBanoryPod-prefix.pch */,
+				692723B025390C9E116C08809ACCFE9A /* OCBanoryPod-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/OCBanoryPod";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -213,6 +232,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9830517B4561446A75DB710FE1870C08 /* Pods-OCBanoryPod_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47B3B0C61CD03AD863E2FC1335B2EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B825810A8F2B46339D7778E6CB277F04 /* JJTool.h in Headers */,
+				EA2B253CAEDB8BD56D6F065AAA21A557 /* OCBanoryPod-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +293,24 @@
 			productReference = 299F847F94673D2586A21BE2380C51F7 /* Pods_OCBanoryPod_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		EEB362C32C9F1A833021260CE4A7456D /* OCBanoryPod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE03237DA7CEA20AB73844B6A92EA42 /* Build configuration list for PBXNativeTarget "OCBanoryPod" */;
+			buildPhases = (
+				7C47B3B0C61CD03AD863E2FC1335B2EE /* Headers */,
+				79C1BB55C9102E3E9A35DA1E40865A98 /* Sources */,
+				70A3CE9D46F5230837F69BA08F03EA36 /* Frameworks */,
+				A2245E28300FCFA1D544D6DEB02AB54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCBanoryPod;
+			productName = OCBanoryPod;
+			productReference = 9627DBAAAAB71CAEDF9094079F4B2AA4 /* OCBanoryPod.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -282,7 +328,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 47A921E957FCA3B92A3CEE6EE18E5451 /* Products */;
+			productRefGroup = 3D5CC113E9BC991CAF7E21F7679981C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -295,6 +341,13 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		04880998E27493D109D7B8C6054C73FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2245E28300FCFA1D544D6DEB02AB54F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,6 +369,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB9A4BD466B17F9E4AC14AE470B43AE /* Pods-OCBanoryPod_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79C1BB55C9102E3E9A35DA1E40865A98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC1D8DC81694AAF03DF060E7D850A90 /* JJTool.m in Sources */,
+				CC7EF98963FDA7013E5530DD9182C90F /* OCBanoryPod-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,22 +407,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0AED795D72FB80CF9B3373936E52DA27 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A860C2A190B5EC628076EC6993A7801B /* OCBanoryPod.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		36E1AB801DC963D0ADBF45BF750ABFA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8064FBB317C62E7BC8273171C97026FE /* Pods-OCBanoryPod_Example.debug.xcconfig */;
+			baseConfigurationReference = D279176A12C336B648EF222E2350BD82 /* Pods-OCBanoryPod_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -453,7 +502,7 @@
 		};
 		5FFEC754C1E154FB5FE433C553C913B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E14B5A1E0095F72D2CD44F8855B81A7 /* Pods-OCBanoryPod_Example.release.xcconfig */;
+			baseConfigurationReference = C3A43C5EEB0CE73CBBE39C868C8B7A46 /* Pods-OCBanoryPod_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -551,7 +600,7 @@
 		};
 		83EFF0515ACC8B153F805FAD4BCE3E4F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05B8ADD6C3D45C73F20BFA8DD3F094DF /* Pods-OCBanoryPod_Tests.release.xcconfig */;
+			baseConfigurationReference = E9CAF4D595A1F9D8A3FBEAE362241D10 /* Pods-OCBanoryPod_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -583,23 +632,40 @@
 			};
 			name = Release;
 		};
-		88BA772276DAC14EF5CCFCB74C273CF0 /* Release */ = {
+		9018BE89D0F59FD7C73E75F996F275FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A860C2A190B5EC628076EC6993A7801B /* OCBanoryPod.xcconfig */;
+			baseConfigurationReference = EAF1C75D2B3B3EED07B3B1DA38DFD0A6 /* OCBanoryPod.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OCBanoryPod/OCBanoryPod-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCBanoryPod/OCBanoryPod-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OCBanoryPod/OCBanoryPod.modulemap";
+				PRODUCT_MODULE_NAME = OCBanoryPod;
+				PRODUCT_NAME = OCBanoryPod;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		CD38E8C19F6225460E5A4D9315F54239 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84B73620AE54CBB0178B180F5B4CB29F /* Pods-OCBanoryPod_Tests.debug.xcconfig */;
+			baseConfigurationReference = 6AC346B410C92D59C062BC5233E1DD96 /* Pods-OCBanoryPod_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -630,6 +696,38 @@
 			};
 			name = Debug;
 		};
+		FFDBB6A4952E9CD50DA3C6CF30F834F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF1C75D2B3B3EED07B3B1DA38DFD0A6 /* OCBanoryPod.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OCBanoryPod/OCBanoryPod-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCBanoryPod/OCBanoryPod-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OCBanoryPod/OCBanoryPod.modulemap";
+				PRODUCT_MODULE_NAME = OCBanoryPod;
+				PRODUCT_NAME = OCBanoryPod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -651,20 +749,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4DE03237DA7CEA20AB73844B6A92EA42 /* Build configuration list for PBXNativeTarget "OCBanoryPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9018BE89D0F59FD7C73E75F996F275FB /* Debug */,
+				FFDBB6A4952E9CD50DA3C6CF30F834F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5B5B2FD60147F08A1B8CE8AEB9416E5E /* Build configuration list for PBXNativeTarget "Pods-OCBanoryPod_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36E1AB801DC963D0ADBF45BF750ABFA2 /* Debug */,
 				5FFEC754C1E154FB5FE433C553C913B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		87993D61042B827168C502557744C09A /* Build configuration list for PBXAggregateTarget "OCBanoryPod" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0AED795D72FB80CF9B3373936E52DA27 /* Debug */,
-				88BA772276DAC14EF5CCFCB74C273CF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

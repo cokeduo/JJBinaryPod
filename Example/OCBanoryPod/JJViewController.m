@@ -7,6 +7,7 @@
 //
 
 #import "JJViewController.h"
+#import "JJTool.h"
 
 @interface JJViewController ()
 
@@ -17,7 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    [JJTool log];
 }
 
 - (void)didReceiveMemoryWarning
