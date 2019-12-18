@@ -32,7 +32,7 @@ TODO: Add long description of the pod here.
 
   #s.source_files = 'OCBanoryPod/Classes/**/*'
   
-
+  s.source_files = 'OCBanoryPod/Classes/**/*.h'
   s.vendored_frameworks = 'OCBanoryPo/FrameWorks/OCBinaryFrameWork.framework'
   
   # s.resource_bundles = {
