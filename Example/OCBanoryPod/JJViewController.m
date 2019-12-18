@@ -20,6 +20,7 @@
     [super viewDidLoad];
 	
     [JJTool log];
+    [JJTool log2];
 }
 
 - (void)didReceiveMemoryWarning

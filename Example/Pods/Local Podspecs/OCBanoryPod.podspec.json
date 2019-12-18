@@ -18,5 +18,5 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "OCBanoryPod/Classes/**/*"
+  "vendored_frameworks": "OCBanoryPo/FrameWorks/OCBinaryFrameWork.framework"
 }

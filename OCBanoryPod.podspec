@@ -30,7 +30,10 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'OCBanoryPod/Classes/**/*'
+  #s.source_files = 'OCBanoryPod/Classes/**/*'
+  
+
+  s.vendored_frameworks = 'OCBanoryPo/FrameWorks/OCBinaryFrameWork.framework'
   
   # s.resource_bundles = {
   #   'OCBanoryPod' => ['OCBanoryPod/Assets/*.png']

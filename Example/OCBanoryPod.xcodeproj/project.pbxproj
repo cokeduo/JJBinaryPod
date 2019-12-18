@@ -24,6 +24,12 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		ABD103A0DA96D7015722D6E4 /* Pods_OCBanoryPod_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F1E6D5DD19A29149ABEB20 /* Pods_OCBanoryPod_Tests.framework */; };
+		BA09441A23AA00D0002802D8 /* OCBinaryFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA09441123AA00D0002802D8 /* OCBinaryFrameWork.framework */; };
+		BA09442123AA00D0002802D8 /* OCBinaryFrameWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA09442023AA00D0002802D8 /* OCBinaryFrameWorkTests.m */; };
+		BA09442623AA00D0002802D8 /* OCBinaryFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA09441123AA00D0002802D8 /* OCBinaryFrameWork.framework */; };
+		BA09442723AA00D0002802D8 /* OCBinaryFrameWork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA09441123AA00D0002802D8 /* OCBinaryFrameWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BA09443123AA010F002802D8 /* JJTool.h in Headers */ = {isa = PBXBuildFile; fileRef = BA09442F23AA010F002802D8 /* JJTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA09443223AA010F002802D8 /* JJTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BA09443023AA010F002802D8 /* JJTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +40,42 @@
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = OCBanoryPod;
 		};
+		BA09441B23AA00D0002802D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA09441023AA00D0002802D8;
+			remoteInfo = OCBinaryFrameWork;
+		};
+		BA09441D23AA00D0002802D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = OCBanoryPod_Example;
+		};
+		BA09442423AA00D0002802D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA09441023AA00D0002802D8;
+			remoteInfo = OCBinaryFrameWork;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA09442D23AA00D0002802D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BA09442723AA00D0002802D8 /* OCBinaryFrameWork.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0881DD6AE5694F99CC39B373 /* Pods-OCBanoryPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBanoryPod_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OCBanoryPod_Tests/Pods-OCBanoryPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +105,13 @@
 		95F1E6D5DD19A29149ABEB20 /* Pods_OCBanoryPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCBanoryPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B694C220BEFD365294DB035D /* Pods-OCBanoryPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBanoryPod_Example.release.xcconfig"; path = "Target Support Files/Pods-OCBanoryPod_Example/Pods-OCBanoryPod_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B7DE7CBE0A36C6A625599B13 /* Pods-OCBanoryPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBanoryPod_Tests.release.xcconfig"; path = "Target Support Files/Pods-OCBanoryPod_Tests/Pods-OCBanoryPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BA09441123AA00D0002802D8 /* OCBinaryFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCBinaryFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA09441423AA00D0002802D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA09441923AA00D0002802D8 /* OCBinaryFrameWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCBinaryFrameWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA09442023AA00D0002802D8 /* OCBinaryFrameWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBinaryFrameWorkTests.m; sourceTree = "<group>"; };
+		BA09442223AA00D0002802D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA09442F23AA010F002802D8 /* JJTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJTool.h; path = ../../OCBanoryPod/Classes/JJTool.h; sourceTree = "<group>"; };
+		BA09443023AA010F002802D8 /* JJTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJTool.m; path = ../../OCBanoryPod/Classes/JJTool.m; sourceTree = "<group>"; };
 		DEE940ABE4E0801D979C25C8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EDECE18E6811902749F6B47B /* Pods-OCBanoryPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBanoryPod_Example.debug.xcconfig"; path = "Target Support Files/Pods-OCBanoryPod_Example/Pods-OCBanoryPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F44A82CBDD7B271FE2B1FBA2 /* OCBanoryPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OCBanoryPod.podspec; path = ../OCBanoryPod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -74,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA09442623AA00D0002802D8 /* OCBinaryFrameWork.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -92,6 +141,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA09440E23AA00D0002802D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA09441623AA00D0002802D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA09441A23AA00D0002802D8 /* OCBinaryFrameWork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -101,6 +165,8 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for OCBanoryPod */,
 				6003F5B5195388D20070C39A /* Tests */,
+				BA09441223AA00D0002802D8 /* OCBinaryFrameWork */,
+				BA09441F23AA00D0002802D8 /* OCBinaryFrameWorkTests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				BB4553523608CB65D0F29F0D /* Pods */,
@@ -112,6 +178,8 @@
 			children = (
 				6003F58A195388D20070C39A /* OCBanoryPod_Example.app */,
 				6003F5AE195388D20070C39A /* OCBanoryPod_Tests.xctest */,
+				BA09441123AA00D0002802D8 /* OCBinaryFrameWork.framework */,
+				BA09441923AA00D0002802D8 /* OCBinaryFrameWorkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,6 +253,25 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		BA09441223AA00D0002802D8 /* OCBinaryFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				BA09442F23AA010F002802D8 /* JJTool.h */,
+				BA09443023AA010F002802D8 /* JJTool.m */,
+				BA09441423AA00D0002802D8 /* Info.plist */,
+			);
+			path = OCBinaryFrameWork;
+			sourceTree = "<group>";
+		};
+		BA09441F23AA00D0002802D8 /* OCBinaryFrameWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA09442023AA00D0002802D8 /* OCBinaryFrameWorkTests.m */,
+				BA09442223AA00D0002802D8 /* Info.plist */,
+			);
+			path = OCBinaryFrameWorkTests;
+			sourceTree = "<group>";
+		};
 		BB4553523608CB65D0F29F0D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +285,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BA09440C23AA00D0002802D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA09443123AA010F002802D8 /* JJTool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		6003F589195388D20070C39A /* OCBanoryPod_Example */ = {
 			isa = PBXNativeTarget;
@@ -207,11 +305,12 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				3024DEFE3F58787EA266A4D4 /* [CP] Embed Pods Frameworks */,
+				BA09442D23AA00D0002802D8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BA09442523AA00D0002802D8 /* PBXTargetDependency */,
 			);
 			name = OCBanoryPod_Example;
 			productName = OCBanoryPod;
@@ -237,6 +336,43 @@
 			productReference = 6003F5AE195388D20070C39A /* OCBanoryPod_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BA09441023AA00D0002802D8 /* OCBinaryFrameWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA09442C23AA00D0002802D8 /* Build configuration list for PBXNativeTarget "OCBinaryFrameWork" */;
+			buildPhases = (
+				BA09440C23AA00D0002802D8 /* Headers */,
+				BA09440D23AA00D0002802D8 /* Sources */,
+				BA09440E23AA00D0002802D8 /* Frameworks */,
+				BA09440F23AA00D0002802D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCBinaryFrameWork;
+			productName = OCBinaryFrameWork;
+			productReference = BA09441123AA00D0002802D8 /* OCBinaryFrameWork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BA09441823AA00D0002802D8 /* OCBinaryFrameWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA09442E23AA00D0002802D8 /* Build configuration list for PBXNativeTarget "OCBinaryFrameWorkTests" */;
+			buildPhases = (
+				BA09441523AA00D0002802D8 /* Sources */,
+				BA09441623AA00D0002802D8 /* Frameworks */,
+				BA09441723AA00D0002802D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA09441C23AA00D0002802D8 /* PBXTargetDependency */,
+				BA09441E23AA00D0002802D8 /* PBXTargetDependency */,
+			);
+			name = OCBinaryFrameWorkTests;
+			productName = OCBinaryFrameWorkTests;
+			productReference = BA09441923AA00D0002802D8 /* OCBinaryFrameWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,6 +384,15 @@
 				ORGANIZATIONNAME = "“wangduo”";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+					BA09441023AA00D0002802D8 = {
+						CreatedOnToolsVersion = 10.3;
+						ProvisioningStyle = Automatic;
+					};
+					BA09441823AA00D0002802D8 = {
+						CreatedOnToolsVersion = 10.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -268,6 +413,8 @@
 			targets = (
 				6003F589195388D20070C39A /* OCBanoryPod_Example */,
 				6003F5AD195388D20070C39A /* OCBanoryPod_Tests */,
+				BA09441023AA00D0002802D8 /* OCBinaryFrameWork */,
+				BA09441823AA00D0002802D8 /* OCBinaryFrameWorkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,27 +439,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3024DEFE3F58787EA266A4D4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
+		BA09440F23AA00D0002802D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OCBanoryPod_Example/Pods-OCBanoryPod_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/OCBanoryPod/OCBanoryPod.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCBanoryPod.framework",
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA09441723AA00D0002802D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCBanoryPod_Example/Pods-OCBanoryPod_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
 		5511ABE00E3439F9659E9A93 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,6 +521,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA09440D23AA00D0002802D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA09443223AA010F002802D8 /* JJTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA09441523AA00D0002802D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA09442123AA00D0002802D8 /* OCBinaryFrameWorkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -385,6 +544,21 @@
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* OCBanoryPod_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		BA09441C23AA00D0002802D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA09441023AA00D0002802D8 /* OCBinaryFrameWork */;
+			targetProxy = BA09441B23AA00D0002802D8 /* PBXContainerItemProxy */;
+		};
+		BA09441E23AA00D0002802D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* OCBanoryPod_Example */;
+			targetProxy = BA09441D23AA00D0002802D8 /* PBXContainerItemProxy */;
+		};
+		BA09442523AA00D0002802D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA09441023AA00D0002802D8 /* OCBinaryFrameWork */;
+			targetProxy = BA09442423AA00D0002802D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -494,9 +668,11 @@
 			baseConfigurationReference = EDECE18E6811902749F6B47B /* Pods-OCBanoryPod_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCBanoryPod/OCBanoryPod-Prefix.pch";
 				INFOPLIST_FILE = "OCBanoryPod/OCBanoryPod-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,9 +686,11 @@
 			baseConfigurationReference = B694C220BEFD365294DB035D /* Pods-OCBanoryPod_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCBanoryPod/OCBanoryPod-Prefix.pch";
 				INFOPLIST_FILE = "OCBanoryPod/OCBanoryPod-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -567,6 +745,180 @@
 			};
 			name = Release;
 		};
+		BA09442823AA00D0002802D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = OCBinaryFrameWork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.OCBinaryFrameWork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA09442923AA00D0002802D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = OCBinaryFrameWork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.OCBinaryFrameWork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA09442A23AA00D0002802D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = OCBinaryFrameWorkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.OCBinaryFrameWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCBanoryPod_Example.app/OCBanoryPod_Example";
+			};
+			name = Debug;
+		};
+		BA09442B23AA00D0002802D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = OCBinaryFrameWorkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.OCBinaryFrameWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCBanoryPod_Example.app/OCBanoryPod_Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -593,6 +945,24 @@
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
 				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA09442C23AA00D0002802D8 /* Build configuration list for PBXNativeTarget "OCBinaryFrameWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA09442823AA00D0002802D8 /* Debug */,
+				BA09442923AA00D0002802D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA09442E23AA00D0002802D8 /* Build configuration list for PBXNativeTarget "OCBinaryFrameWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA09442A23AA00D0002802D8 /* Debug */,
+				BA09442B23AA00D0002802D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
