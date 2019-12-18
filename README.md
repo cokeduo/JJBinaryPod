@@ -29,9 +29,9 @@ pod 'OCBanoryPod'
 OCBanoryPod is available under the MIT license. See the LICENSE file for more info.
 
 
-## 源码/二进制依赖配置
+## 源码/二进制依赖配置eerdc
 ```
-if ENV['IS_SOURCE']
+if ENV['IS_SOURCE'] || ENV['OCBanoryPod']
 s.source_files = 'OCBanoryPod/Classes/**/*'
 else
 s.vendored_frameworks = 'OCBanoryPod/FrameWorks/**/OCBinaryFrameWork.framework'
@@ -39,9 +39,21 @@ end
 ```
 ## 源码依赖方式
 ```
-IS_SOURCE=1 pod install
+IS_SOURCE=1 pod install     -> 所有组件都会源码依赖
+OCBanoryPod=1 pod install   -> 可以指定特定组件依赖源码
+
 ```
 ## 二进制依赖
 ```
 pod install （默认）
+```
+
+## other
+
+```
+更改framework编译后存在的路径，默认在DriverData路径下，更改路径可以方便podspece文件里对framework路径的指定；
+eg:  OCBanoryPod/FrameWorks/**/OCBinaryFrameWork.framework, 以后每次编译成功的framework文件都会存在与该路径下；
+
+更改路径： Xcode - File - Workspace settings - Advanced - Custom - Relative to Workspace - Products 更改为自定义路径（Products当前目录为workspace当前目录）；
+自定义路径： ../OCBanoryPod/FrameWorks
 ```

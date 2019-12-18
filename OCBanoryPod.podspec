@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  if ENV['IS_SOURCE']
+  if ENV['IS_SOURCE'] || ENV['OCBanoryPod']
       s.source_files = 'OCBanoryPod/Classes/**/*'
   else
       s.vendored_frameworks = 'OCBanoryPod/FrameWorks/**/OCBinaryFrameWork.framework'
