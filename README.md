@@ -27,3 +27,21 @@ pod 'OCBanoryPod'
 ## License
 
 OCBanoryPod is available under the MIT license. See the LICENSE file for more info.
+
+
+## 源码/二进制依赖配置
+```
+if ENV['IS_SOURCE']
+s.source_files = 'OCBanoryPod/Classes/**/*'
+else
+s.vendored_frameworks = 'OCBanoryPod/FrameWorks/**/OCBinaryFrameWork.framework'
+end
+```
+## 源码依赖方式
+```
+IS_SOURCE=1 pod install
+```
+## 二进制依赖
+```
+pod install （默认）
+```
