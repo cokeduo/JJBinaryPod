@@ -57,16 +57,16 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6234F950DAADEC6F3431825A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6234F950DAADEC6F3431825A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		67EC00890BE5F4D5949CE171 /* Pods_OCBanoryPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCBanoryPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95F1E6D5DD19A29149ABEB20 /* Pods_OCBanoryPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCBanoryPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B694C220BEFD365294DB035D /* Pods-OCBanoryPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBanoryPod_Example.release.xcconfig"; path = "Target Support Files/Pods-OCBanoryPod_Example/Pods-OCBanoryPod_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B7DE7CBE0A36C6A625599B13 /* Pods-OCBanoryPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBanoryPod_Tests.release.xcconfig"; path = "Target Support Files/Pods-OCBanoryPod_Tests/Pods-OCBanoryPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DEE940ABE4E0801D979C25C8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DEE940ABE4E0801D979C25C8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EDECE18E6811902749F6B47B /* Pods-OCBanoryPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBanoryPod_Example.debug.xcconfig"; path = "Target Support Files/Pods-OCBanoryPod_Example/Pods-OCBanoryPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F44A82CBDD7B271FE2B1FBA2 /* OCBanoryPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OCBanoryPod.podspec; path = ../OCBanoryPod.podspec; sourceTree = "<group>"; };
+		F44A82CBDD7B271FE2B1FBA2 /* OCBanoryPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OCBanoryPod.podspec; path = ../OCBanoryPod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				0881DD6AE5694F99CC39B373 /* Pods-OCBanoryPod_Tests.debug.xcconfig */,
 				B7DE7CBE0A36C6A625599B13 /* Pods-OCBanoryPod_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				1BBB28FE10DE6073CBA3EC2E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +256,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,24 +294,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1BBB28FE10DE6073CBA3EC2E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OCBanoryPod_Example/Pods-OCBanoryPod_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/OCBanoryPod/OCBanoryPod.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCBanoryPod.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCBanoryPod_Example/Pods-OCBanoryPod_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5511ABE00E3439F9659E9A93 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

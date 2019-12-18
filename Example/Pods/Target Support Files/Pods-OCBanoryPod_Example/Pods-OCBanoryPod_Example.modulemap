@@ -1,0 +1,6 @@
+framework module Pods_OCBanoryPod_Example {
+  umbrella header "Pods-OCBanoryPod_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

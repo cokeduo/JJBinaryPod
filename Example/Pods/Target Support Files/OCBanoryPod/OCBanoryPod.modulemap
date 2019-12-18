@@ -1,0 +1,6 @@
+framework module OCBanoryPod {
+  umbrella header "OCBanoryPod-umbrella.h"
+
+  export *
+  module * { export * }
+}

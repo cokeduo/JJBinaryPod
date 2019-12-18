@@ -1,0 +1,22 @@
+{
+  "name": "OCBanoryPod",
+  "version": "0.1.0",
+  "summary": "二进制方案测试",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/cokeduo/JJBinaryPod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "“wangduo”": "wangduo@akulaku.com"
+  },
+  "source": {
+    "git": "git@github.com:cokeduo/JJBinaryPod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "OCBanoryPod/Classes/**/*"
+}
