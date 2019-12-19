@@ -21,6 +21,7 @@
 	
     [JJTool log];
     [JJTool log2];
+    [JJTool log3];
 }
 
 

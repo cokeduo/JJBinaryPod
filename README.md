@@ -22,14 +22,14 @@ pod 'OCBanoryPod'
 
 ## Author
 
-“wangduo”, wangduo@akulaku.com
+“wangduo”, cokeduo@163.com
 
 ## License
 
 OCBanoryPod is available under the MIT license. See the LICENSE file for more info.
 
 
-## 源码/二进制依赖配置eerdc
+## 源码/二进制依赖配置
 ```
 if ENV['IS_SOURCE'] || ENV['OCBanoryPod']
 s.source_files = 'OCBanoryPod/Classes/**/*'
@@ -59,6 +59,36 @@ eg:  OCBanoryPod/FrameWorks/**/OCBinaryFrameWork.framework, 以后每次编译�
 自定义路径： ../OCBanoryPod/FrameWorks
 ```
 
-## 建议（采坑）
+## 合并多架构framework
 
-OCBinaryFrameWork.framework 的名字建议pod组件名名称，不要随意命名，否则使用过程中源码和二进制切换头文件导入方式也需要更改；
+添加脚本，每次编译后自动获取debug,release下各架构framework，根据需要合并成所支持多架构的framework；
+tips: 最终合并的framework存放到podspecs中所指定依赖的framework的目录，不用再做framework移动；
+
+```
+
+# Type a script or drag a script file from your workspace to insert its path.
+TARGET_FRAMEWORK_NAME=${TARGET_NAME}
+PROJECT_NAME=${PROJECT_NAME}
+
+INSTALL_FRAMEWORK="../${PROJECT_NAME}/FrameWorks/${TARGET_FRAMEWORK_NAME}.framework"
+
+# 编译结果目录
+WRK_DIR=build
+
+DEBUG_DEVICE_DIR="${WRK_DIR}/Debug-iphoneos/${TARGET_FRAMEWORK_NAME}.framework/${TARGET_FRAMEWORK_NAME}"
+DEBUG_SIMULATOR_DIR="${WRK_DIR}/Debug-iphonesimulator/${TARGET_FRAMEWORK_NAME}.framework/${TARGET_FRAMEWORK_NAME}"
+
+# release 模式架构支持 Debug -> Release
+xcodebuild -configuration "Debug" -target "${TARGET_FRAMEWORK_NAME}" -sdk iphoneos clean build
+xcodebuild -configuration "Debug" -target "${TARGET_FRAMEWORK_NAME}" -sdk iphonesimulator clean build
+
+
+# 如果目录下最终的二进制文件已经存在则先做删除
+if [ -d "${INSTALL_FRAMEWORK}" ]
+then
+rm -rf "${INSTALL_FRAMEWORK}"
+fi
+
+# 合并多架构framework到最终目录
+lipo -create "${DEBUG_DEVICE_DIR}" "${DEBUG_SIMULATOR_DIR}" -output "${INSTALL_FRAMEWORK}"
+```

@@ -16,5 +16,9 @@
 + (void)log2{
     NSLog(@"我是log2, 升级测试");
 }
+    
++ (void)log3{
+    NSLog(@"我是log3, 升级测试");
+}
 
 @end

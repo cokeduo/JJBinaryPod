@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/cokeduo/JJBinaryPod'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '“wangduo”' => 'wangduo@akulaku.com' }
+  s.author           = { '“wangduo”' => 'codeduo@163.com' }
   s.source           = { :git => 'git@github.com:cokeduo/JJBinaryPod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -33,7 +33,8 @@ TODO: Add long description of the pod here.
   if ENV['IS_SOURCE'] || ENV['OCBanoryPod']
       s.source_files = 'OCBanoryPod/Classes/**/*'
   else
-      s.vendored_frameworks = 'OCBanoryPod/FrameWorks/**/OCBinaryFrameWork.framework'
+      s.source_files = 'OCBanoryPod/Classes/**/*.h'
+      s.vendored_frameworks = 'OCBanoryPod/FrameWorks/OCBinaryFrameWork.framework'
   end
   
   

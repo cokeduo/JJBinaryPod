@@ -344,6 +344,7 @@
 				BA09440D23AA00D0002802D8 /* Sources */,
 				BA09440E23AA00D0002802D8 /* Frameworks */,
 				BA09440F23AA00D0002802D8 /* Resources */,
+				BA09449B23AB57D9002802D8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -499,6 +500,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BA09449B23AB57D9002802D8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTARGET_FRAMEWORK_NAME=${TARGET_NAME}\nPROJECT_NAME=${PROJECT_NAME}\n\nINSTALL_FRAMEWORK=\"../${PROJECT_NAME}/FrameWorks/${TARGET_FRAMEWORK_NAME}.framework\"\n\n# 编译结果目录\nWRK_DIR=build\n\nDEBUG_DEVICE_DIR=\"${WRK_DIR}/Debug-iphoneos/${TARGET_FRAMEWORK_NAME}.framework/${TARGET_FRAMEWORK_NAME}\"\nDEBUG_SIMULATOR_DIR=\"${WRK_DIR}/Debug-iphonesimulator/${TARGET_FRAMEWORK_NAME}.framework/${TARGET_FRAMEWORK_NAME}\"\n\n# release 模式架构支持 Debug -> Release\nxcodebuild -configuration \"Debug\" -target \"${TARGET_FRAMEWORK_NAME}\" -sdk iphoneos clean build\nxcodebuild -configuration \"Debug\" -target \"${TARGET_FRAMEWORK_NAME}\" -sdk iphonesimulator clean build\n\n\n# 如果目录下最终的二进制文件已经存在则先做删除\nif [ -d \"${INSTALL_FRAMEWORK}\" ]\nthen\nrm -rf \"${INSTALL_FRAMEWORK}\"\nfi\n\n# 合并多架构framework到最终目录\nlipo -create \"${DEBUG_DEVICE_DIR}\" \"${DEBUG_SIMULATOR_DIR}\" -output \"${INSTALL_FRAMEWORK}\"\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
