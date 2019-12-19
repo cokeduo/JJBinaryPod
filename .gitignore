@@ -3,6 +3,7 @@
 
 # Xcode
 build/
+Example/index/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
