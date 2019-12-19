@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   if ENV['IS_SOURCE'] || ENV['OCBanoryPod']
       s.source_files = 'OCBanoryPod/Classes/**/*'
   else
-      s.vendored_frameworks = 'OCBanoryPod/FrameWorks/OCBinaryFrameWork.framework'
+      s.vendored_frameworks = 'OCBanoryPod/FrameWorks/OCBanoryPod.framework'
   end
   
   
