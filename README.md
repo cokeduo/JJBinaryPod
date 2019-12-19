@@ -65,8 +65,6 @@ eg:  OCBanoryPod/FrameWorks/**/OCBinaryFrameWork.framework, 以后每次编译�
 tips: 最终合并的framework存放到podspecs中所指定依赖的framework的目录，不用再做framework移动；
 
 ```
-
-# Type a script or drag a script file from your workspace to insert its path.
 TARGET_FRAMEWORK_NAME=${TARGET_NAME}
 PROJECT_NAME=${PROJECT_NAME}
 
@@ -75,8 +73,8 @@ INSTALL_FRAMEWORK="../${PROJECT_NAME}/FrameWorks/${TARGET_FRAMEWORK_NAME}.framew
 # 编译结果目录
 WRK_DIR=build
 
-DEBUG_DEVICE_DIR="${WRK_DIR}/Debug-iphoneos/${TARGET_FRAMEWORK_NAME}.framework/${TARGET_FRAMEWORK_NAME}"
-DEBUG_SIMULATOR_DIR="${WRK_DIR}/Debug-iphonesimulator/${TARGET_FRAMEWORK_NAME}.framework/${TARGET_FRAMEWORK_NAME}"
+DEBUG_DEVICE_DIR="${WRK_DIR}/Debug-iphoneos/${TARGET_FRAMEWORK_NAME}.framework"
+DEBUG_SIMULATOR_DIR="${WRK_DIR}/Debug-iphonesimulator/${TARGET_FRAMEWORK_NAME}.framework"
 
 # release 模式架构支持 Debug -> Release
 xcodebuild -configuration "Debug" -target "${TARGET_FRAMEWORK_NAME}" -sdk iphoneos clean build
@@ -89,6 +87,12 @@ then
 rm -rf "${INSTALL_FRAMEWORK}"
 fi
 
+# 创建framework目录
+mkdir -p "${INSTALL_FRAMEWORK}"
+
+# 拷贝framework内部资源文件(headers..)
+cp -r "${DEBUG_DEVICE_DIR}/" "${INSTALL_FRAMEWORK}/"
+
 # 合并多架构framework到最终目录
-lipo -create "${DEBUG_DEVICE_DIR}" "${DEBUG_SIMULATOR_DIR}" -output "${INSTALL_FRAMEWORK}"
+lipo -create "${DEBUG_DEVICE_DIR}/${TARGET_FRAMEWORK_NAME}" "${DEBUG_SIMULATOR_DIR}/${TARGET_FRAMEWORK_NAME}" -output "${INSTALL_FRAMEWORK}/${TARGET_FRAMEWORK_NAME}"
 ```
